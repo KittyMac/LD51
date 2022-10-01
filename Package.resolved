@@ -1,0 +1,95 @@
+{
+  "pins" : [
+    {
+      "identity" : "chronometer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KittyMac/Chronometer.git",
+      "state" : {
+        "revision" : "1360b46bfa6eecbdedd24590b95f97d3e59dc027",
+        "version" : "0.1.6"
+      }
+    },
+    {
+      "identity" : "flynn",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KittyMac/Flynn.git",
+      "state" : {
+        "revision" : "d796a78217274e353f0fce965fef2f21f72da87b",
+        "version" : "0.4.13"
+      }
+    },
+    {
+      "identity" : "gzipswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KittyMac/GzipSwift.git",
+      "state" : {
+        "revision" : "ca15e2487b21e6f9d8829997184f14de32654b5b",
+        "version" : "5.3.0"
+      }
+    },
+    {
+      "identity" : "hitch",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KittyMac/Hitch.git",
+      "state" : {
+        "revision" : "f016a7ea5aef15e706a21aec11e3ea3adb56437f",
+        "version" : "0.4.50"
+      }
+    },
+    {
+      "identity" : "jib",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KittyMac/Jib.git",
+      "state" : {
+        "revision" : "b5fe9fbba59683920de582ee2e4561f32c36c606",
+        "version" : "0.0.20"
+      }
+    },
+    {
+      "identity" : "pamphlet",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KittyMac/Pamphlet.git",
+      "state" : {
+        "revision" : "83e96565a3564a2bd87d44903e1a0df9d7037cde",
+        "version" : "0.3.57"
+      }
+    },
+    {
+      "identity" : "picaroon",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KittyMac/Picaroon.git",
+      "state" : {
+        "revision" : "602a17073515d584cf643e340ac88f8190038f7d",
+        "version" : "0.4.11"
+      }
+    },
+    {
+      "identity" : "sextant",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KittyMac/Sextant.git",
+      "state" : {
+        "revision" : "7080eaf2f5173fa97349d97aed73966387beb799",
+        "version" : "0.4.12"
+      }
+    },
+    {
+      "identity" : "spanker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KittyMac/Spanker.git",
+      "state" : {
+        "revision" : "c383c78d988f925d071b0f204e4591c8a198843e",
+        "version" : "0.2.27"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser",
+      "state" : {
+        "revision" : "9f39744e025c7d377987f30b03770805dcb0bcd1",
+        "version" : "1.1.4"
+      }
+    }
+  ],
+  "version" : 2
+}
