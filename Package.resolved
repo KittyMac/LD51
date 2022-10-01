@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "figurehead",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/KittyMac/Figurehead.git",
+      "state" : {
+        "revision" : "252c7d85bc60d802273ca977e9c4c40a95e08a05",
+        "version" : "0.2.0"
+      }
+    },
+    {
       "identity" : "flynn",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/KittyMac/Flynn.git",

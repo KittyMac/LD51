@@ -1,0 +1,22 @@
+{
+    "short_name": "LD51 - TBD",
+    "name": "LD51 - TBD",
+    "description": "Game entry for LD51",
+    "icons": [
+        {
+            "src": "public/icon192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "public/icon512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/LD51/",
+    "background_color": "#000000",
+    "display": "standalone",
+    "scope": "/LD51/",
+    "theme_color": "#505c83"
+}

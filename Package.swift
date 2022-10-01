@@ -10,6 +10,7 @@ let package = Package(
         .executable(name: "LD51", targets: ["LD51Site"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/KittyMac/Figurehead.git", from: "0.2.0"),
         .package(url: "https://github.com/apple/swift-argument-parser", from: "1.0.0"),
         .package(url: "https://github.com/KittyMac/Flynn.git", from: "0.3.0"),
         .package(url: "https://github.com/KittyMac/Picaroon.git", from: "0.4.0"),
@@ -21,6 +22,7 @@ let package = Package(
             dependencies: [
                 "Flynn",
                 "Picaroon",
+                "Figurehead",
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
                 .product(name: "PamphletFramework", package: "Pamphlet"),
             ],
