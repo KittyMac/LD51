@@ -31,3 +31,15 @@ alert("Hello World")
 
 
 
+function testTile() {
+    let testTile1 = new Tile(0, 0);
+    print(`Tile ID is ${testTile1.id}`);
+    print(`Current tile rotation is ${testTile1.rotation}`);
+    print(`Tile rotation after rotating is ${testTile1.rotate()}`);
+}
+function testMaze() {
+    let testMaze1 = new Maze(4,8);
+    print(`The width of the maze is ${testMaze1.width}`);
+    print(`The height of the maze is ${testMaze1.height}`);
+    print(`The values for all tiles in the maze are as follows ${testMaze1.allTiles}`);
+}
