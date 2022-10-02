@@ -1,7 +1,7 @@
 #define PAMPHLET_PREPROCESSOR
 class Tile {
     constructor (id, rotation) {
-        this.id = id;
+        this.id = this.randomizeTileID();
         this.rotation = rotation;
         this.sprite = this.createSprite();
     }
@@ -18,11 +18,17 @@ class Tile {
         return this.rotation;
     }
     createSprite() {
-        let texture = PIXI.Texture.from("tile0000.png");
+
+        let fileName = this.id.toString().padStart(4, "0");
+        let texture = PIXI.Texture.from(`tile${fileName}.png`);
         const sprite = new PIXI.Sprite(texture);
         sprite.anchor.set(0.5, 0.5)
         return sprite
     }
+    randomizeTileID() {
+        let randNum = Math.random() * 5;
+        this.id = Math.floor(randNum);
+        return this.id
 }
-
+}
 
