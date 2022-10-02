@@ -2,7 +2,7 @@
 
 class Game {
     constructor() {
-        this.tick = 0;
+        this.countDownToRotate = 10 * 1000;
         
         this.maze = new Maze(2,2);
         
@@ -23,6 +23,14 @@ class Game {
     }
     
     update() {
+        this.countDownToRotate -= app.ticker.deltaMS;
+        if (this.countDownToRotate <= 0) {
+            // Rotate the maze
+            print("ROTATE");
+            this.countDownToRotate = 10 * 1000;
+        }
+        
+        
         mazeContainer.position.set(app.renderer.width / 2,
                                    app.renderer.height / 2);
     }
