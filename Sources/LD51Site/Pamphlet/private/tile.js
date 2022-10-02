@@ -2,8 +2,9 @@
 class Tile {
     constructor (id, rotation) {
         this.id = this.randomizeTileID();
-        this.rotation = this.rotate();
+        this.rotation = 0;
         this.sprite = this.createSprite();
+        this.rotate();
     }
     rotate() {
         
@@ -16,8 +17,9 @@ class Tile {
         }
         else if (directionNum <= 0.5) {
             this.rotation -= halfPi;
+            
         }
-        return this.rotation;
+        this.sprite.rotation = this.rotation;
     }
     createSprite() {
 

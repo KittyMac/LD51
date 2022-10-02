@@ -27,7 +27,11 @@ class Game {
         if (this.countDownToRotate <= 0) {
             // Rotate the maze
             print("ROTATE");
+            for (let tile of this.maze.allTiles) {
+                tile.rotate();
+            }
             this.countDownToRotate = 10 * 1000;
+            
         }
         
         
