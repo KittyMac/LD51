@@ -51,18 +51,41 @@
             <h1>This app requires Javascript to be enabled.</h1>
         </div>
     </noscript>
-            
+    
+    ID_ELEMENT(pixi,MOUSE()FULLSCREEN(),)
+    
+    <!--
     ELEMENT(GROW()START()CLIPS()VSTACK(),
         GITHUB("https://github.com/KittyMac/LD51",#535457)
     )
+    -->
     ID_ELEMENT(alertsContainer,FULLSCREEN()ABSOLUTE()BACKGROUND(0,0,0,0.5)CENTER()CLIPS()HIDE(),)
-    
     
     <script src="public/pixi.min.js"></script>
     <script src="script.combined.js"></script>
     
     <script>
         InitFigurehead();
+        initPixi();
+        initTimers();
+        
+        app.loader
+        .add('tiles', 'public/tiles.json')
+        .load((loader, resources) => {
+            gameContainer = new PIXI.Container();
+            mazeContainer = new PIXI.Container();
+            
+            gameContainer.addChild(mazeContainer);
+            
+            app.stage.addChild(gameContainer);
+            
+            let game = new Game();
+            
+            app.ticker.add(() => {
+                game.update();
+            });
+        });
+        
     </script>
     
 </body>

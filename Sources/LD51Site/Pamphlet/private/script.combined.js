@@ -3,12 +3,11 @@
 #include <./figurehead/figurehead.html>
 #include <./figurehead/figurehead.js>
 
+#include <./pixi.js>
 #include <./game.js>
 #include <./maze.js>
 #include <./player.js>
 #include <./tile.js>
-
-alert("Hello World")
 
 // The Plan:
 // 1. Get the maze displaying on the screen

@@ -16,6 +16,12 @@ class Tile {
         }
         return this.rotation;
     }
+    createSprite() {
+        let texture = PIXI.Texture.from("tile0000.png");
+        const sprite = new PIXI.Sprite(texture);
+        sprite.anchor.set(0.5, 0.5)
+        return sprite
+    }
 }
 
 
