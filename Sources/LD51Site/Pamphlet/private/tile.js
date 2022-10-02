@@ -2,10 +2,12 @@
 class Tile {
     constructor (id, rotation) {
         this.id = this.randomizeTileID();
-        this.rotation = rotation;
+        this.rotation = this.rotate();
         this.sprite = this.createSprite();
     }
     rotate() {
+        
+        this.rotation = 0;
         var directionNum = Math.random();
         let pi = Math.PI;
         let halfPi = Math.PI / 2.0;
@@ -23,6 +25,7 @@ class Tile {
         let texture = PIXI.Texture.from(`tile${fileName}.png`);
         const sprite = new PIXI.Sprite(texture);
         sprite.anchor.set(0.5, 0.5)
+        sprite.rotation = this.rotation;
         return sprite
     }
     randomizeTileID() {
