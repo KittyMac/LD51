@@ -3,6 +3,7 @@ class Tile {
     constructor (id, rotation) {
         this.id = id;
         this.rotation = rotation;
+        this.sprite = this.createSprite();
     }
     rotate() {
         var directionNum = Math.random();
